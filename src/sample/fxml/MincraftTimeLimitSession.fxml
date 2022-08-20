@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SessionStartController">
+   <children>
+      <AnchorPane prefHeight="86.0" prefWidth="600.0" style="-fx-background-color: #1245;">
+         <children>
+            <Text layoutX="185.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сеанс игры">
+               <font>
+                  <Font size="44.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableUsers" layoutX="14.0" layoutY="109.0" prefHeight="262.0" prefWidth="226.0">
+        <columns>
+          <TableColumn fx:id="TavleColumnName" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="TavleColumnNick" prefWidth="75.0" text="Nick" />
+            <TableColumn fx:id="TavleColumnTime" prefWidth="75.0" text="Time" />
+        </columns>
+      </TableView>
+      <Button fx:id="calculationButton" layoutX="374.0" layoutY="240.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="149.0" text="Расчитать" />
+      <TextField fx:id="userTimeTextField" layoutX="376.0" layoutY="188.0" />
+      <TextField fx:id="userNickTextField" layoutX="374.0" layoutY="128.0" />
+      <Text layoutX="276.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Имя игрока" />
+      <Text layoutX="256.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Время игрока. Если указан ютубер, то всем добавляется указанное время, иначе у указанного пользователя время вычитается" textAlignment="CENTER" wrappingWidth="105.0" />
+      <Button fx:id="backButton" layoutX="503.0" layoutY="345.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" text="Назад" />
+   </children>
+</AnchorPane>
